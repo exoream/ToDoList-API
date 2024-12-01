@@ -11,7 +11,7 @@ class TaskService {
             data: {
                 title: validData.title,
                 description: validData.description,
-                date: new Date(validData.date),
+                date: validData.date ? new Date(validData.date) : undefined,
                 time: validData.time,
                 priority: validData.priority,
                 category: validData.category,
