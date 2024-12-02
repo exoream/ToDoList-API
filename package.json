@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js",
-    "build": "prisma generate"
+    "build": "npx prisma migrate dev"
   },
   "keywords": [],
   "author": "",
