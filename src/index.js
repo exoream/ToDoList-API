@@ -8,6 +8,12 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+app.get("/", (req, res) => {
+    res.json({
+        status: true,
+        message: "todolist",
+    });
+});
 
 app.use("", userRoute);
 app.use("", taskRoute);
